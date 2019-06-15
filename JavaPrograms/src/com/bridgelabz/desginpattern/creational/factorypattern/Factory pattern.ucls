@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.3" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.bridgelabz.desginpattern.creational.factorypattern.Ios" project="JavaPrograms" 
+    file="/JavaPrograms/src/com/bridgelabz/desginpattern/creational/factorypattern/Ios.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="97" width="236" x="141" y="244"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.bridgelabz.desginpattern.creational.factorypattern.Windows" 
+    project="JavaPrograms" file="/JavaPrograms/src/com/bridgelabz/desginpattern/creational/factorypattern/Windows.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="236" x="417" y="244"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.bridgelabz.desginpattern.creational.factorypattern.MobileOs" 
+    project="JavaPrograms" file="/JavaPrograms/src/com/bridgelabz/desginpattern/creational/factorypattern/MobileOs.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="236" x="969" y="244"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.bridgelabz.desginpattern.creational.factorypattern.OperatingSystemFactory" 
+    project="JavaPrograms" 
+    file="/JavaPrograms/src/com/bridgelabz/desginpattern/creational/factorypattern/OperatingSystemFactory.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="236" x="1245" y="244"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.bridgelabz.desginpattern.creational.factorypattern.Android" 
+    project="JavaPrograms" file="/JavaPrograms/src/com/bridgelabz/desginpattern/creational/factorypattern/Android.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="236" x="693" y="244"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="6" language="java" name="com.bridgelabz.desginpattern.creational.factorypattern.OperatingSystem" 
+    project="JavaPrograms" 
+    file="/JavaPrograms/src/com/bridgelabz/desginpattern/creational/factorypattern/OperatingSystem.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="79" width="236" x="417" y="381"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <realization id="7">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <realization id="8">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <realization id="9">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

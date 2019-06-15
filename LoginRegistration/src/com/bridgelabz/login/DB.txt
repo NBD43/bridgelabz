@@ -1,0 +1,4 @@
+ //table create in databases
+ create table Registration(Id INT NOT NULL Auto_Increment,firstname varchar(10) NOT NULL,lastname varchar(10) NOT NULL,address varchar(20),phoneno int(10),emailId varchar(20) NOT NULL,password varchar(20) NOT NULL,PRIMARY KEY(Id));
+create table Registration(firstname varchar(10) NOT NULL,lastname varchar(10) NOT NULL,address varchar(20),phoneno int(12),emailId varchar(50) NOT NULL,password varchar(30) NOT NULL);
+ 

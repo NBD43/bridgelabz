@@ -1,0 +1,11 @@
+package com.bridgelabz.desginpattern.structural.facade;
+
+public class Rectangle implements Shape {
+
+	@Override
+	public void draw() {
+		System.out.println("Rectangle()::Draw");
+
+	}
+
+}

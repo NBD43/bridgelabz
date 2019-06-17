@@ -46,14 +46,16 @@ public Registration register;
 				  System.out.println("successfuly inserted");// execute it on test database
 				  RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
 				   rd.forward(request, response);
+				   
 			  }
 			  ps.close();
 			  
 				
 			
 			
-		}catch(Exception e) {
-			e.printStackTrace();
+		}catch(Exception e) { 
+			//e.printStackTrace();
+			
 		}
 		
 		

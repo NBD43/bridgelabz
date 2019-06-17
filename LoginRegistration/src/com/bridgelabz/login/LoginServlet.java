@@ -45,10 +45,10 @@ public class LoginServlet extends HttpServlet {
 			ps.setString(2, password);
 			ResultSet rs=ps.executeQuery();
 			if(rs.next()) {
-				//HttpSession hs=request.getSession();
-				//hs.setAttribute("firstName", rs.getString(2));
-				pw.println("welcome :"+rs.getString(1));
-				RequestDispatcher rd=request.getRequestDispatcher("input.html");
+				HttpSession hs=request.getSession();
+				hs.setAttribute("firstName", rs.getString(1));
+				//pw.println("welcome :"+rs.getString(1));
+				RequestDispatcher rd=request.getRequestDispatcher("welcome.jsp");
 				rd.forward(request, response);
 			}else {
 				pw.println("Invalid EmailId and Password");

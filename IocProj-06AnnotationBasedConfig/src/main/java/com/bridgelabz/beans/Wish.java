@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 @Component
 public class Wish {
-	@Autowired
+	
 	private Date date;
 	
 	
@@ -15,12 +15,12 @@ public class Wish {
 		//date=new Date();
 		System.out.println("Wish.0-param constructor");
 	}
-
+	
 	public Wish(Date date) {
 		System.out.println("Wish.1-param Constructor");
 		this.date = date;
 	}
-
+	@Autowired
 	public void setDate(Date date) {
 		this.date = date;
 	}

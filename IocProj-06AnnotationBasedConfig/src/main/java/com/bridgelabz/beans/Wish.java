@@ -4,8 +4,10 @@ import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 @Component
+@Lazy
 public class Wish {
 	
 	private Date date;
@@ -15,12 +17,12 @@ public class Wish {
 		//date=new Date();
 		System.out.println("Wish.0-param constructor");
 	}
-	
+	@Autowired
 	public Wish(Date date) {
 		System.out.println("Wish.1-param Constructor");
 		this.date = date;
 	}
-	@Autowired
+	
 	public void setDate(Date date) {
 		this.date = date;
 	}

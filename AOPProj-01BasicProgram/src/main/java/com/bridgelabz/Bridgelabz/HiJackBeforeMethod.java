@@ -8,7 +8,7 @@ public class HiJackBeforeMethod implements MethodBeforeAdvice {
 
 	@Override
 	public void before(Method method, Object[] args, Object target) throws Throwable {
-		System.out.println("HiJackBeforeMethod.before()");
+		System.out.println("HiJackBeforeMethod::::beforeMethodAdvice()");
 
 	}
 

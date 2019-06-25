@@ -9,7 +9,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		ApplicationContext ctx= new FileSystemXmlApplicationContext("src/main/java/com/bridgelabz/resource/applicationContext.xml");
-		CustomerService cust=(CustomerService)ctx.getBean("customerServiceProxy");
+		CustomerService cust=(CustomerService) ctx.getBean("customerServiceProxy");
 		System.out.println("************************************");
 		cust.printName();
 		System.out.println("************************************");

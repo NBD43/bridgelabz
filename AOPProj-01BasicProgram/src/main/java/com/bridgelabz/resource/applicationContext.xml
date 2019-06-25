@@ -5,14 +5,19 @@
 
 <bean id="customerService" class="com.bridgelabz.Bridgelabz.CustomerService">
 <property name="name"  value="NBD43"/>
-<property name="url"  value="https://sites.google.com/bridgelabz.com/javafellowshipcontent/spring-mvc-and-rest"/>
+<property name="url"  value="https://sites.google.com/bridgelabz.com"/>
 </bean>
 
-<bean id="hiJackBeforeMethod" class="com.bridgelabz.Bridgelabz.HiJackBeforeMethod"/>
+<bean id="hijackBeforeMethod" class="com.bridgelabz.Bridgelabz.HiJackBeforeMethod"/>
+<bean id="hijackAfterMethod" class="com.bridgelabz.Bridgelabz.HiJackAfterMethod"/>
+<bean id="hijackAroundMethod" class="com.bridgelabz.Bridgelabz.HiJackAroundMethod"/>
 
 <bean id="customerServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
-<property name="target" value="customerService"/>
+<property name="target" ref="customerService"/>
 <property name="interceptorNames">
-<list><value>hiJackBeforeMethod</value></list></property>
+<list>
+<value>hijackAroundMethod</value>
+
+</list></property>
 </bean>
 </beans>
